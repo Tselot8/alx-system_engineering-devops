@@ -1,8 +1,2 @@
 #!/bin/bash
-i=0
-while IFS= read -r line; do
-  if (( i % 2 == 0 )); then
-    echo "$line"
-  fi
-  ((i++))
-done
+n=0; while IFS= read -r l; do if (( n % 2 == 0 )); then echo "$l"; fi; ((n++)); done
